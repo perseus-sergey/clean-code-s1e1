@@ -108,6 +108,7 @@ label[for="new-task"] {
 
 input#new-task {
   width: 318px;
+  margin-top: 20px;
 }
 
 /* Task list */
