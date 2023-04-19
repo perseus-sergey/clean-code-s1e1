@@ -18,39 +18,47 @@
   <main class="main">
     <section class="section add-item">
       <h3 class="section__title">Add Item</h3>
-      <div class="task-row-wrapper">
+      <div class="add-item__row-wrapper">
         <input id="new-task" class="
-                                    section__input-text 
-                                    add-item__input 
-                                    section_elem_displ_block" type="text">
-        <button>Add</button>
+                                    section-row__input-text 
+                                    add-item__input" type="text">
+        <button class="section-row__btn">Add</button>
       </div>
     </section>
-    <section class="list todo-list">
+    <section class="section todo-list">
       <h3 class="section__title">Todo</h3>
-      <ul id="incomplete-tasks">
-        <li><input type="checkbox">
-          <label class="section__label section_elem_displ_block">Pay Bills</label>
-          <input class="section__input-text section_elem_displ_block" type="text">
-          <button class="edit">Edit</button>
-          <button class="delete"><img alt="remove" src="./remove.svg"></button>
+      <ul id="incomplete-tasks" class="section__list">
+        <li class="section-row">
+          <input class="section-row__check" type="checkbox">
+          <label class="section-row__label">Pay Bills</label>
+          <input class="section-row__input-text" type="text">
+          <button class="section-row__btn btn-edit">Edit</button>
+          <button class="section-row__btn btn-delete">
+            <img class="btn-delete__img" alt="remove" src="./remove.svg">
+          </button>
         </li>
-        <li class="edit-mode"><input type="checkbox">
-          <label class="section__label section_elem_displ_block">Go Shopping</label>
-          <input class="section__input-text section_elem_displ_block" type="text" value="Go Shopping">
-          <button class="edit">Save</button>
-          <button class="delete"><img alt="remove" src="./remove.svg"></button>
+        <li class="section-row section-row_edit-mode">
+          <input class="section-row__check" type="checkbox">
+          <label class="section-row__label">Go Shopping</label>
+          <input class="section-row__input-text" type="text" value="Go Shopping">
+          <button class="section-row__btn btn-edit">Save</button>
+          <button class="section-row__btn btn-delete">
+            <img class="btn-delete__img" alt="remove" src="./remove.svg">
+          </button>
         </li>
       </ul>
     </section>
-    <section class="list completed-list">
+    <section class="section completed-list">
       <h3 class="section__title">Completed</h3>
-      <ul id="completed-tasks">
-        <li><input type="checkbox" checked>
-          <label class="section__label section_elem_displ_block">See the Doctor</label>
-          <input class="section__input-text section_elem_displ_block" type="text">
-          <button class="edit">Edit</button>
-          <button class="delete"><img alt="remove" src="./remove.svg"></button>
+      <ul id="completed-tasks" class="section__list">
+        <li class="section-row">
+          <input class="section-row__check" type="checkbox" checked>
+          <label class="section-row__label">See the Doctor</label>
+          <input class="section-row__input-text" type="text">
+          <button class="section-row__btn btn-edit">Edit</button>
+          <button class="section-row__btn btn-delete">
+            <img class="btn-delete__img" alt="remove" src="./remove.svg">
+          </button>
         </li>
       </ul>
     </section>
