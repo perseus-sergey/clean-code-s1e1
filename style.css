@@ -34,12 +34,6 @@
   margin: 0 auto 0;
 }
 
-.section_elem_displ_block {
-  /* width: 56%; */
-  /* display: inline-block;
-  flex-grow: 1; */
-}
-
 .add-item__row-wrapper {
   display: flex;
   margin-top: 20px;
@@ -109,7 +103,6 @@ button:hover,
 .section-row__label,
 .section-row__input-text,
 .add-item__input {
-  /* width: 318px; */
   flex-grow: 1;
   display: inline-block;
 }
@@ -137,11 +130,6 @@ li>label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  /* width: 226px; */
-}
-
-li>.section-row__input-text {
-  /* width: 226px; */
 }
 
 .btn-delete__img {
@@ -167,7 +155,6 @@ ul li input[type=text] {
 
 ul li.section-row_edit-mode input[type=text] {
   display: inline-block;
-  /* width: 224px; */
 }
 
 ul li.section-row_edit-mode label {
